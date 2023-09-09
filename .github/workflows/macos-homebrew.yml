@@ -27,8 +27,8 @@ jobs:
     env:
       targetName: GoldenDict
       version: 23.07.25
-      version-suffix: alpha
-      prerelease: true
+      version-suffix: chi
+      prerelease: false
     steps:
       # macos 11.0 默认环境变了,要指定
       - name: prepare env
@@ -104,7 +104,7 @@ jobs:
           
       - name: compile
         run: |          
-          qmake CONFIG+=release CONFIG+=no_macos_universal CONFIG+=zim_support CONFIG+=use_xapian
+          qmake CONFIG+=release CONFIG+=zim_support CONFIG+=use_xapian
           make -j8
           
       - name: package
