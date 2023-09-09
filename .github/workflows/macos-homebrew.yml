@@ -198,4 +198,4 @@ jobs:
 
             #### Changes
             
-            ${{steps.build_changelog.outputs.changelog}}
+            ...
