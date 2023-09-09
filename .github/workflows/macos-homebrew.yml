@@ -28,7 +28,7 @@ jobs:
       targetName: GoldenDict
       version: 23.07.25
       version-suffix: chi
-      prerelease: false
+      prerelease: true
     steps:
       # macos 11.0 默认环境变了,要指定
       - name: prepare env
